@@ -40,7 +40,6 @@ async function checkEvalConcerns(){
         await driver.wait(until.elementLocated(By.linkText("IEP Referral Decision"))).then(el => el.click());
         await driver.wait(until.elementLocated(By.xpath("//a[contains(text(),'Notice of Referral Decision')]"))).then(el => el.click());
 
-        //await sleep(7000);
         //AU
         await driver.wait(until.elementLocated(By.xpath('//input[contains(@data-bind,"checked: EmotionalBehavioralDisorderSpecifiesCheckBox[1]")]')));
 
